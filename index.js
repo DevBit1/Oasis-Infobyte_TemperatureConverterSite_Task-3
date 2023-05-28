@@ -1,8 +1,6 @@
 document.getElementById('main-unit').addEventListener('keyup', () => {
   let mainOptions = document.querySelector('.main-unit-options');
   let secondaryOptions = document.querySelector('.second-unit-options');
-  // options collection returns a collection of all <option> elements in a drop-down list.
-  // selectedIndex property sets or returns the index of the selected option in a drop-down list.
   let mainUnit = mainOptions.options[
     mainOptions.selectedIndex
   ].textContent.toLowerCase();
@@ -10,7 +8,7 @@ document.getElementById('main-unit').addEventListener('keyup', () => {
     secondaryOptions.selectedIndex
   ].textContent.toLowerCase();
 
-  let numberTyped = parseInt(document.getElementById('main-unit').value); // returns string
+  let numberTyped = parseInt(document.getElementById('main-unit').value); 
   console.log(numberTyped);
 
   if (mainUnit === 'celsius') {
@@ -42,7 +40,7 @@ document.getElementById('main-unit').addEventListener('keyup', () => {
     }
   }
 
-  // reset the values to make a new search
+
   document.querySelectorAll('.reset').forEach((select) => {
     select.addEventListener('change', () => {
       document.getElementById('main-unit').value = '';
