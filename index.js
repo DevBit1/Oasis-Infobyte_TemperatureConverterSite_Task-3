@@ -1,28 +1,3 @@
-let today = new Date();
-
-let month = [
-  'January',
-  'February',
-  'March',
-  'April',
-  'May',
-  'June',
-  'July',
-  'August',
-  'September',
-  'October',
-  'November',
-  'December',
-];
-
-let m = today.getMonth();
-
-let date = `${today.getDate()} ${month}, ${today.getFullYear()}`;
-// console.log(date);
-
-// document.querySelector('.date').textContent = date;
-// document.getElementsByClassName('date')[0].textContent = date;
-
 document.getElementById('main-unit').addEventListener('keyup', () => {
   let mainOptions = document.querySelector('.main-unit-options');
   let secondaryOptions = document.querySelector('.second-unit-options');
